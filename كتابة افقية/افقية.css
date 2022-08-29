@@ -1,0 +1,28 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    background: rgb(115, 116, 111); 
+} 
+.center { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+} h2 
+{
+     margin: 0; 
+     padding: 0; 
+     font-size: 9em; 
+     font-family: Arial, Helvetica, sans-serif; 
+     color: rgba(3, 3, 3, 0.4); 
+     text-shadow: 1px 2px 1px rgb(52, 78, 78) , 1px 0 0 rgba(0, 0, 0, 0.6); 
+     transform: rotate(-20deg) skew(30deg); 
+    } 
+    h2::before { 
+        content: attr(data-title); 
+        position: absolute; 
+        color: rgb(0, 225, 255); 
+        transform: translate(60px , 0) skew(-50deg); 
+        text-shadow: none; 
+    }
+
